@@ -24,10 +24,5 @@ export default {
       required: true,
     },
   },
-  data() {
-    return {
-      countryId: `#${this.country.callingCodes}`,
-    };
-  },
 };
 </script>

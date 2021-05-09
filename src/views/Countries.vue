@@ -1,21 +1,27 @@
 <template>
   <div class="container">
     <div class="row">
-      <CountriesCard
+      <countriesCard
         v-for="country in countries"
         :key="country.name"
         :country="country"
       />
     </div>
+    <countryModal
+      v-for="country in countries"
+      :key="country.name"
+      :country="country"
+    />
   </div>
 </template>
 
 <script>
 import contriesAPI from "./../apis/countries";
-import CountriesCard from "../components/countriesCard.vue";
+import countriesCard from "../components/countriesCard.vue";
+
 export default {
   components: {
-    CountriesCard,
+    countriesCard,
   },
   data() {
     return {

@@ -18,6 +18,12 @@ const routes = [
     component: Countries
   },
   {
+    path: '/country/:alpha2Code',
+    name: 'country',
+    component: () => import('../views/Country.vue')
+
+  },
+  {
     path: '*',
     name: 'not_found',
     component: NotFound

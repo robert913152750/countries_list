@@ -18,12 +18,6 @@ const routes = [
     component: Countries
   },
   {
-    path: '/countries/:page',
-    name: 'countries_page',
-    component: Countries
-
-  },
-  {
     path: '/country/:alpha2Code',
     name: 'country',
     component: () => import('../views/Country.vue')
